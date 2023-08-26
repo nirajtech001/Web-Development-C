@@ -1,0 +1,48 @@
+body{
+    background-color: gray;
+}
+.back{
+    width: 60rem;
+    height: 30rem;
+    background-color: white;
+    margin-left: 12rem;
+    margin-top: 3rem;
+    padding: 2rem;
+}
+
+h1{
+    text-align: center;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+
+h4{
+    background-color: black;
+    color: azure;
+    padding: 0.2rem;
+    width: 12rem;
+    text-align: center;
+}
+
+.img{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.img > h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: greenyellow;
+    height: 5rem;
+    width: 5rem;
+    font-size: 3rem;
+    padding: 1rem;
+    margin-top: 0%;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PAT Registration Form</title>
+</head>
+<style>
+    form {
+        border: 3px solid #ccc;
+    }
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input,
+form select,
+form textarea {
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+form input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+</style>
+<body>
+  <h2><center>PAT Registration Form</center></h2>
+  <form id="registrationForm" style="padding: 20px;">
+    <label for="name">Name:</label>
+    <input type="text" id="name" required><br>
+
+    <label for="regNumber">Register Number:</label>
+    <input type="text" id="regNumber" required><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" required><br>
+
+    <label for="confirmPassword">Confirm Password:</label>
+    <input type="password" id="confirmPassword" required><br>
+
+    <label for="dob">DOB (dd/mm/yy):</label>
+    <input type="text" id="dob" required><br>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" required><br>
+
+    <label>Gender:</label>
+    <input type="radio" name="gender" value="male" required>Male
+    <input type="radio" name="gender" value="female" required>Female
+    <input type="radio" name="gender" value="other" required>Other<br>
+
+    <label for="programme">Programme:</label>
+    <select id="programme" required>
+      <option value="MCA">MCA</option>
+      <option value="M.Tech">M.Tech</option>
+      <!-- Add more options as needed -->
+    </select><br>
+
+    <label for="year">Year:</label>
+    <input type="number" id="year" required><br>
+
+    <label for="semester">Semester:</label>
+    <input type="number" id="semester" required><br>
+
+    <label for="email">Email Id:</label>
+    <input type="email" id="email" required><br>
+
+    <label for="areaOfInterest">Area of Interest:</label>
+    <textarea id="areaOfInterest" required></textarea><br>
+
+    <label for="cgpa">CGPA:</label>
+    <input type="number" id="cgpa" required><br>
+
+    <input type="submit" value="Register">
+  </form>
+
+  <script src="registration.js"></script>
+</body>
+</html>

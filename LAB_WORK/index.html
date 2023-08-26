@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>House Price Prediction</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Real Estate House Price Prediction</h1>
+
+    <label for="int_sqft">Interior Area (sq. ft):</label>
+    <input type="text" id="int_sqft" placeholder="Enter Interior Area (sq. ft)">
+
+    <label for="dist_mainroad">Distance to Main Road (meters):</label>
+    <input type="text" id="dist_mainroad" placeholder="Enter Distance to Main Road (meters)">
+
+    <label for="qs_rooms">Quality Score for Rooms (0-10):</label>
+    <input type="text" id="qs_rooms" placeholder="Enter Quality Score for Rooms">
+
+    <label for="qs_bathroom">Quality Score for Bathrooms (0-10):</label>
+    <input type="text" id="qs_bathroom" placeholder="Enter Quality Score for Bathrooms">
+
+    <label for="qs_bedroom">Quality Score for Bedrooms (0-10):</label>
+    <input type="text" id="qs_bedroom" placeholder="Enter Quality Score for Bedrooms">
+
+    <label for="qs_overall">Overall Quality Score (0-10):</label>
+    <input type="text" id="qs_overall" placeholder="Enter Overall Quality Score">
+
+    <label for="commis">Commission Percentage (%):</label>
+    <input type="text" id="commis" placeholder="Enter Commission Percentage">
+
+    <label for="area">Area:</label>
+    <select id="area">
+      <option value="Adyar">Adyar</option>
+      <option value="Anna Nagar">Anna Nagar</option>
+      <option value="Chrompet">Chrompet</option>
+    </select>
+
+    <label for="utility_avail">Utility Availability:</label>
+    <select id="utility_avail">
+      <option value="Yes">Yes</option>
+      <option value="No">No</option>
+    </select>
+
+    <label for="street">Street Type:</label>
+    <select id="street">
+      <option value="Gravel">Gravel</option>
+      <option value="No Access">No Access</option>
+      <option value="Paved">Paved</option>
+    </select>
+
+    <label for="mzzone">MZZONE:</label>
+    <select id="mzzone">
+      <option value="A">A</option>
+      <option value="C">C</option>
+      <option value="I">I</option>
+      <option value="RH">RH</option>
+      <option value="RL">RL</option>
+      <option value="RM">RM</option>
+    </select>
+
+
+    <!-- Add other input fields for the remaining attributes -->
+    <!-- e.g., AREA_Adyar, AREA_Anna Nagar, AREA_Chrompet, UTILITY_AVAIL_NoSewr, STREET_Gravel, etc. -->
+
+    <input type="button" value="Predict" onclick="predictPrice()">
+    <p id="prediction"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

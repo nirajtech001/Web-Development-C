@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Example</title>
+    <style>
+      td {
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <table bordercolor="grey" style="margin: auto;">
+        <tr style="background-color: gray">
+          <td colspan="2" style="text-align: right"><b>World of Fruit</b></td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align: right"><b>Fruit Survey</b></td>
+        </tr>
+        <tr>
+          <td style="text-align: end;"><label for="name">Name:</label></td>
+          <td><input type="text" id="name" name="name" required /></td>
+        </tr>
+        <tr>
+          <td style="text-align: end;"><label for="address">Address:</label></td>
+          <td><input type="text" id="address" name="address" required /></td>
+        </tr>
+        <tr>
+          <td style="text-align: end;"><label for="email">Email:</label></td>
+          <td><input type="email" id="email" name="email" required /></td>
+        </tr>
+        <tr>
+          <td style="text-align: end;">
+            <br for="gender"
+              >How many pieces of fruit</br> do you eat per day?</label
+            >
+          </td>
+          <td>
+            <input type="radio" id="0" name="gender" value="male" />
+            <label for="0">0</label></br>
+            <input type="radio" id="1" name="gender" value="female" />
+            <label for="1">1</label></br>
+            <input type="radio" id="2" name="gender" value="other" />
+            <label for="2">2</label></br>
+            <input type="radio" id="more" name="gender" value="other" />
+            <label for="more">More than 2</label>
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: end;"><label for="fruit">My Favourite fruit:</label></td>
+          <td>
+            <select id="fruit" name="fruit">
+              <option value="apple">Apple</option>
+              <option value="banana">Banana</option>
+              <option value="orange" selected>Plum</option>
+              <option value="grape">Grape</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: end;"><label for="subscribe">Would you like a broucher?</label></td>
+          <td><input type="checkbox" id="subscribe" name="subscribe" /></td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center">
+            <input type="submit" value="Submit" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

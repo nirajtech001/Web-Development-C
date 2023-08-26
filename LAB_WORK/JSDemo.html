@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="name">Name : </label>
+    <input type="text" id="text1">
+    <script>
+        function handle(){
+            var name = document.getElementById("text1").value();
+            document.getElementById("l1").innerHTML=name;
+        }
+    </script>
+    <button onclick="handle()">Submit</button>
+    <p id="l1"></p>
+
+   
+</body>
+</html>
