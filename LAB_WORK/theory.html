@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Welcome to Javascript.</h2>
+    <p>Addiction of Two Numbers</p>
+    <input id="A" type="text">
+    <input id="B" type="text">
+    <input type="button" onclick="sums()" value="ADD">
+    <p id="sum"></p>
+</body>
+
+<script>
+    function sums(){
+        let a = parseInt(document.getElementById("A").value)
+        let b = parseInt(document.getElementById("B").value)
+        let total = a+b;
+        document.getElementById("sum").innerHTML = total;
+    }
+    
+</script>
+</html>
